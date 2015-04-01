@@ -5,24 +5,7 @@
   	<link href="css/black-tie.min.css" rel="stylesheet" />
   	<link href="css/index.css" rel="stylesheet" />
   </head>
-  <body>
-  	<header>
-  		<div class="inner-menu">
-			<nav class="clearfix">
-				<div class="main-logo-wrapper col-md-3">
-					<img src="img/ptsquaredlogo3.png" />
-				</div>
-
-				<ul class="clearfix col-md-9">
-					<li><a href="#about">About</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#social">Social</a></li>					
-					<li><a href="#contact">Contact</a></li>
-					<li class="contact" ><a href="#contact">Let's Chat</a></li>
-				</ul>
-			</nav>
-		</div>
-  	</header> 	
+  <body>	
 	<section id="header">
 		<video id="big-video" 
 		   autoplay
@@ -31,14 +14,41 @@
 		</video>
 		<div class="header-overlay">
 			<div class="header-text-wrap container">
-				<h1>Be Your Very Best. I Can Help.</h1>
-				<h2>Take charge of your life today</h2>
-				<button>Let's Get Started</button>
-				<i class="btr bt-angle-down"></i>
+				<div class="main-logo-wrapper col-md-12">
+					<img src="img/ptsquaredlogo.png" />
+					<h1>Be Your Very Best. I Can Help.</h1>
+					<h2>Take charge of your life today</h2>
+					<button>Let's Get Started</button>
+					<i class="btr bt-angle-down"></i>					
+				</div>				
 			</div>
 		</div>
 	</section>   	
-	<div class="container">
+	<div class="container-fluid">
+		<nav class="clearfix">
+			<span class="col-md-3">
+				<ol class="social-list clearfix">
+					<li>
+						<i class="fab fab-facebook-alt"></i>
+					</li>
+					<li>
+						<i class="fab fab-instagram"></i>
+					</li>
+					<li>
+						<i class="fab fab-twitter"></i>
+					</li>
+				</ol>
+			</span>
+			<ul class="clearfix col-md-9">
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#social">Photos</a></li>							
+				<li><a href="#contact">Contact</a></li>
+				<li class="pink"><a href="#contact">Let's Chat</a></li>
+			</ul>
+		</nav>	
+	</div>	
+	<div class="container">		
 		<section id="about" class="row">
 			<h4><span>About</span></h4>
 			<div class="col-md-6 avatar-wrap">
@@ -58,25 +68,18 @@
 			<h4><span>Services</span></h4>
 		</section>
 		<section id="social" class="row">
-			<h4><span>Social</span></h4>
+			<h4><span>Photos</span></h4>
 			<div class="col-ms-12">
-				<ol class="clearfix">
-					<li>
-						<i class="fab fab-facebook-alt"></i>
-					</li>
-					<li>
-						<i class="fab fab-instagram"></i>
-					</li>
-					<li>
-						<i class="fab fab-twitter"></i>
-					</li>
-				</ol>
+
 			</div>
 		</section>		
 		<!--<section id="testimonials" class="row">
 			<h4><span>Testimonials</span></h4>
 		</section>-->
-		<section id="contact" class="row">
+	
+	</div>	
+	<div class="container-fluid map">
+		<section id="contact" class="last">
 			<h4><span>Contact</span></h4>
 			<div class="col-md-6">
 				<div class="address-info">
@@ -96,11 +99,15 @@
 					</span>
 				</div>
 			</div>
-			<div class="col-md-6 map-image">
-				<img src="https://maps.googleapis.com/maps/api/staticmap?center=London,ON,Canada&zoom=11&size=300x300">
-			</div>
-		</section>		
-	</div>
+			<iframe 
+			width="100%" 
+			height="500" 
+			frameborder="0" 
+			style="border:0" 
+			src="https://www.google.com/maps/embed/v1/place?q=London%2C%20ON%2C%20Canada&key=AIzaSyAgVHVokrTHndGUi6CBJUW1NQH2epNcWMg">
+			</iframe>			
+		</section>			
+	</div>	
 	<footer>
 		<div class="text-center"><strong>&copy; 2015 PTSqaured. </strong><span>all rights reserved</span></div>
 	</footer>

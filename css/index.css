@@ -12,9 +12,10 @@ p{
 }
 section#header{
 	position: relative;
-	height: 600px;
+	height: 700px;
 	overflow: hidden;
 }
+
 .header-overlay{
 	position: absolute;
 	height: 100%;
@@ -32,7 +33,7 @@ section#header{
   top: -30px;
 }
 .main-logo-wrapper img{
-	width: 100px;
+	width: 350px;
 }
 .header-overlay{
 
@@ -49,7 +50,8 @@ section#header{
   text-align: center;
   text-transform: uppercase;
   vertical-align: baseline;
-  font: 400 2.875em/1.30435 'Open Sans', open-sans, sans-serif;
+  font-weight: 700;
+  margin-top:10px;
 }
 .header-overlay h2{
 -webkit-font-smoothing: antialiased;
@@ -71,11 +73,11 @@ section#header{
 .header-overlay i{
     color: #FFF;
     display: block;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 .header-text-wrap{
 	text-align: center;
-	padding: 18em 0 13em;
+	padding: 75px 0 13em;
 	text-align: center;
 	max-width: 87.5em;
 	margin-left: auto;
@@ -150,6 +152,10 @@ button{
   vertical-align: baseline;
   width: 310px;	
 }
+.container-fluid{
+    -webkit-box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.075 );
+  box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.075 );
+}
 header{
 	position: absolute;
 	top: 0;
@@ -166,26 +172,23 @@ header .inner-menu ul{
 	margin-top: 5px;
 }
 nav{
-	padding-top: 50px;
-	  min-width: 900px;
+  padding: 0 4em;
+  margin: 20px 0 15px 0;
 }
 nav ul{
 	list-style-type: none;
-	display: block;
-	margin-right: 0;
-	text-align: right;
-	margin-top: 3px;	
+	margin: 0px;
+  text-align: right; 	
 }
 nav ul li{
 	display: inline-block;
-	padding-top: 12px;
 }
 nav a{
 	color: #FFF;
 	text-transform: uppercase;
 	padding: 3px 15px;
 	font-size: 13px;
-	color: #fff;
+	color: rgb(50, 58, 69);
 	font-weight: 500;
 	text-transform: uppercase;
 	line-height: 1em;
@@ -236,30 +239,31 @@ section#contact img{
   margin-top: 10px;
 }
 section#social{}
-section#social ol{
-    list-style-type: none;
-    margin: 0 auto;
-    width: 640px;
-    margin-top: 60px;
-    display: block;
+ol.social-list{
+list-style-type: none;
+  margin: 0 auto;
+  /* width: 640px; */
+  /* margin-top: 60px; */
+  display: block;
+  padding-left:0px;
 }
-section#social ol li{
+ol.social-list li{
   float: left;
   display: block;
-  padding: 45px;
-  border: 1px solid #DDD;
-  border-radius: 1000px;
-  height: 150px;
-  width: 150px;
-  margin-right: 50px;
-  text-align: center;
+  /* padding: 45px; */
+  /* border: 1px solid #DDD; */
+  /* border-radius: 1000px; */
+  /* height: 150px; */
+  /* width: 150px; */
+  margin-right: 20px;
+  /* text-align: center; */
 }
-section#social ol li i{
-  font-size: 58px;
-  color: rgb(199, 53, 130);
+ol.social-list li i{
+  font-size: 18px;
+  color: rgba(50, 58, 69, 0.8);;
 }
 section{
-    padding: 40px 0;
+    padding: 80px 0;
 }
 section#header{
   padding: 0px;
@@ -317,9 +321,23 @@ table tr{
   padding-top: 20px;
   display:block;
 }
+.pink a{
+  color: rgb(199, 53, 130);
+}
+.container-fluid.map{
+  padding:0px;
+  box-shadow: none;
+}
+.container-fluid.map iframe{
+  position: relative;
+  top: 6px;
+}
+section.last{
+  padding-bottom:0px;
+}
 footer{
   background: #323a45;
   padding:20px 0;
   color: #FFF;
-  margin-top: 40px;
+  
 }
