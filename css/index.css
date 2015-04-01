@@ -194,20 +194,20 @@ nav a{
 	transition: all .2s ease-in-out;
 	letter-spacing: .05em;	
 }
-nav .contact{	  
+.contact{	  
 	  border: 1px solid rgb(199, 53, 130);	  
     border-radius: 3px;
 	  padding: 16px 12px 13px;
 	  margin-left: 15px;
     border-radius: 99em;
 }
-nav .contact a{
+.contact a{
 	color: rgb(199, 53, 130);
 }
 #about .avatar-wrap{
   text-align: center;
 }
-#about .avatar-wrap img, #contact img{
+#about .avatar-wrap img{
   width: 65%;
   border-radius: 1000px;
 }
@@ -217,8 +217,23 @@ section#contact i{
 section#contact .map-image{
   text-align:center;
 }
+section#contact .address-info{
+    width: 225px;
+  display: block;
+  margin: 0 auto;
+    padding-top: 10px;
+}
+#contact img{
+  border-radius: 1000px;
+}
+section#contact .contact{
+  margin: 20px 0 0 0;
+  text-align: center;
+  display: block;
+  width: 125px;
+}
 section#contact img{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 section#social{}
 section#social ol{
@@ -285,6 +300,22 @@ section h4:before {
 }
 section h4:before {
   left: 0;
+}
+table{
+    font-size: 16px;
+    color: rgb(116, 124, 131);
+    line-height: 30px;
+    padding-top: 0px;
+    display:block;
+}
+table td{
+  vertical-align: top;
+  vertical-align: top;
+  padding: 0 30px 0 0;
+}
+table tr{
+  padding-top: 20px;
+  display:block;
 }
 footer{
   background: #323a45;
