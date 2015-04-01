@@ -5,7 +5,8 @@
   	<link href="css/black-tie.min.css" rel="stylesheet" />
   	<link href="css/index.css" rel="stylesheet" />
   </head>
-  <body>	
+  <body>
+  	
 	<section id="header">
 		<video id="big-video" 
 		   autoplay
@@ -18,36 +19,38 @@
 					<img src="img/ptsquaredlogo.png" />
 					<h1>Be Your Very Best. I Can Help.</h1>
 					<h2>Take charge of your life today</h2>
-					<button>Let's Get Started</button>
+					<a href="#about">Let's Get Started</a>
 					<i class="btr bt-angle-down"></i>					
 				</div>				
 			</div>
 		</div>
-	</section>   	
-	<div class="container-fluid">
-		<nav class="clearfix">
-			<span class="col-md-3">
-				<ol class="social-list clearfix">
-					<li>
-						<i class="fab fab-facebook-alt"></i>
-					</li>
-					<li>
-						<i class="fab fab-instagram"></i>
-					</li>
-					<li>
-						<i class="fab fab-twitter"></i>
-					</li>
-				</ol>
-			</span>
-			<ul class="clearfix col-md-9">
-				<li><a href="#about">About</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#social">Photos</a></li>							
-				<li><a href="#contact">Contact</a></li>
-				<li class="pink"><a href="#contact">Let's Chat</a></li>
-			</ul>
-		</nav>	
-	</div>	
+	</section>  
+	<div class="nav-wrap-safe"> 	
+		<div class="nav-wrap container-fluid">
+			<nav class="clearfix">
+				<span class="col-md-3">
+					<ol class="social-list clearfix">
+						<li>
+							<a href=""><i class="fab fab-facebook-alt"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fab fab-instagram"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="fab fab-twitter"></i></a>
+						</li>
+					</ol>
+				</span>
+				<ul class="clearfix col-md-9">
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#social">Photos</a></li>							
+					<li><a href="#contact">Contact</a></li>
+					<li class="pink"><a href="mailto:ptsquared2015@gmail.com">Let's Chat</a></li>
+				</ul>
+			</nav>	
+		</div>	
+	</div>
 	<div class="container">		
 		<section id="about" class="row">
 			<h4><span>About</span></h4>
@@ -62,6 +65,9 @@
 				<p>
 				He holds a BSc. in Computer Science from Brock University and a Computer Science Technology Diploma from Sheridan College.
 				</p>
+				<div>
+					<i class="fab fab-linkedin"></i>
+				</div>
 			</div>
 		</section>
 		<section id="services" class="row">
@@ -70,13 +76,11 @@
 		<section id="social" class="row">
 			<h4><span>Photos</span></h4>
 			<div class="col-ms-12">
-
+				<div class="instagram-container">
+					<i class="btl bt-spin bt-spinner"></i>
+				</div>
 			</div>
 		</section>		
-		<!--<section id="testimonials" class="row">
-			<h4><span>Testimonials</span></h4>
-		</section>-->
-	
 	</div>	
 	<div class="container-fluid map">
 		<section id="contact" class="last">
@@ -87,29 +91,30 @@
 						Find me here <i class="btl bt-map-marker"></i>
 					</h5>
 					<p>
+						<i class="btl bt-home"></i>
 						10 Carpreol Court<br />
-						Toronto, ON<br />
-						Canada
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toronto, ON<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canada
 					</p>
 					<p>
-						<strong>416.317.1098</strong>
+						<strong><i class="btl bt-phone"></i> 416.317.1098</strong>
 					</p>				
 					<span class="contact">
-						<a href="#">Email me</a>
+						<a href="mailto:ptsquared2015@gmail.com">Email me</a>
 					</span>
 				</div>
 			</div>
-			<iframe 
-			width="100%" 
-			height="500" 
-			frameborder="0" 
-			style="border:0" 
-			src="https://www.google.com/maps/embed/v1/place?q=London%2C%20ON%2C%20Canada&key=AIzaSyAgVHVokrTHndGUi6CBJUW1NQH2epNcWMg">
-			</iframe>			
+			<div id="map-ui"></div>
+			
 		</section>			
 	</div>	
 	<footer>
-		<div class="text-center"><strong>&copy; 2015 PTSqaured. </strong><span>all rights reserved</span></div>
+		<div class="text-center"><strong>&copy; 2015 PT Sqaured. </strong><span>all rights reserved</span></div>
 	</footer>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/underscore.js"></script>
+	<script src="js/index.js"></script>
   </body>
 </html>  
