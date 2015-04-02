@@ -3,10 +3,16 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 a{
-	color: #f36;
+	color: rgb(199, 53, 130);
+  transition: all .2s ease-in-out;
 }
 a:hover{
   text-decoration: none;
+  color: rgb(199, 53, 130);
+}
+a:focus, a:active{
+  text-decoration: none;
+  color:rgb(50, 58, 69);
 }
 p{
   font-size: 16px;
@@ -24,11 +30,19 @@ section#header{
 	height: 700px;
 	overflow: hidden;
 }
+section#about a{
+  display:block;
+  width:32px;
+}
 section#about i{
   font-size: 32px;
   color: rgba(50, 58, 69, 0.8);
   display: block;
   margin-top: 20px;
+  transition: all .2s ease-in-out;
+}
+section#about i:hover{
+  color: rgb(199, 53, 130);  
 }
 .header-overlay{
 	position: absolute;
@@ -226,8 +240,11 @@ nav a{
 #about .avatar-wrap{
   text-align: center;
 }
+#about h5{
+  margin-top:5px;
+}
 #about .avatar-wrap img{
-  width: 65%;
+  width: 75%;
   border-radius: 1000px;
 }
 section#contact i{
@@ -287,10 +304,14 @@ ol.social-list li{
 }
 ol.social-list li i{
   font-size: 18px;
-  color: rgba(50, 58, 69, 0.8);;
+  color: rgba(50, 58, 69, 0.8);
+  transition: all .2s ease-in-out;
+}
+ol.social-list li i:hover{
+  color: rgb(199, 53, 130);
 }
 section{
-    padding: 80px 0;
+    padding: 80px 0 40px 0;
 }
 section#header{
   padding: 0px;
@@ -372,7 +393,7 @@ section.last{
   padding: 5px;
   margin: 0 20px 10px 0;
   border: 1px solid #EEE;
-  width: 31%;
+  width: 23%;
   text-align: left;
   border-radius: 5px;
 }
