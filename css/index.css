@@ -18,6 +18,7 @@ p{
   font-size: 16px;
   color: rgb(116, 124, 131);
   line-height: 30px;
+  font-weight: 300;
 }
 .truncate{
   white-space: nowrap;
@@ -29,6 +30,16 @@ section#header{
 	position: relative;
 	height: 700px;
 	overflow: hidden;
+}
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
 }
 section#about a{
   display:block;
@@ -59,6 +70,7 @@ section#about i:hover{
 .main-logo-wrapper{
   position: relative;
   top: -30px;
+
 }
 .main-logo-wrapper img{
 	width: 350px;
@@ -432,10 +444,119 @@ section.last{
   margin: 0px;
   padding: 0px;
 }
-
+#services{
+  padding-bottom: 30px;
+}
+.service-wrap{
+  text-align: center;
+}
+.service-wrap .service{
+  margin-top: 80px;
+}
+.service-wrap .service .circle{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #323a45;
+  border-radius: 1000px;
+  text-align: center;
+  padding-top: 60px;
+  background: #56606F;
+  color: #FFF;
+  display: inline-block;
+}
+.service-wrap .service .circle strong{
+  font-size: 48px;
+  display:block;
+}
+.service-wrap .service .circle em{
+  text-transform: uppercase;
+  font-style:normal;
+}
+.service-wrap .service i{
+  color:rgb(199, 53, 130);
+  font-size: 18px;
+  cursor: pointer;
+}
+.service-wrap .service h5{
+  font-size:18px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.popover{
+  width: 300px;
+}
 footer{
   background: #323a45;
   padding:20px 0;
   color: #FFF;
   
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+  .instagram-container a{
+    width: 22%;
+  }
+  section#header{
+    height: 575px;
+  }
+  .main-logo-wrapper img{
+    width: 275px;
+  }
+}
+@media (min-width: 350px) and (max-width: 979px) {
+  .instagram-container img{
+    width: 80%;
+  }
+  nav ul{
+    display: none;
+  }
+  #map-ui{
+    display:none;
+  }
+  section#contact .address-info{
+    position: static;
+    padding-top: 0px;
+  }
+  .header-overlay h2{
+    display:none;
+  }
+  video{
+  }
+  .header-overlay h1{
+    display: none;
+  }
+  nav{
+    margin: 0px;
+    padding-left: 145px;
+  }
+  section{
+    padding-top: 60px;
+  }
+  #about h5{
+    margin-top: 25px;
+  }
+  .instagram-container a{
+    padding: 0px;
+    border: 0px;
+    text-align:center;
+    margin-top:20px;
+  }
+  .instagram-container strong{
+    display: inline-block;
+    width: 75%;
+    padding-left: 20px;
+  }
+  .service-wrap .service i{
+    display:none;
+  }
+  .main-logo-wrapper img {
+    width: 200px;
+    margin-bottom: 20px;
+  } 
+  section#header{
+      height: 225px;
+  }
+
+  .header-text-wrap {
+    padding: 45px 0 13em;  
+  }
 }
