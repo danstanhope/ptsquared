@@ -403,7 +403,7 @@ section.last{
 }
 .instagram-container a{
   padding: 5px;
-  margin: 0 20px 10px 0;
+  margin: 0 15px 10px 5px;
   border: 1px solid #EEE;
   width: 23%;
   text-align: left;
@@ -445,13 +445,13 @@ section.last{
   padding: 0px;
 }
 #services{
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 .service-wrap{
   text-align: center;
 }
 .service-wrap .service{
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .service-wrap .service .circle{
   width: 200px;
@@ -493,7 +493,7 @@ footer{
 }
 @media (min-width: 979px) and (max-width: 1200px) {
   .instagram-container a{
-    width: 22%;
+    width: 22.5%;
   }
   section#header{
     height: 575px;
@@ -502,7 +502,10 @@ footer{
     width: 275px;
   }
 }
-@media (min-width: 350px) and (max-width: 979px) {
+@media (min-device-width : 320px) and (max-device-width : 568px){
+  video{
+    display: none;
+  }  
   .instagram-container img{
     width: 80%;
   }
@@ -526,7 +529,7 @@ footer{
   }
   nav{
     margin: 0px;
-    padding-left: 145px;
+    padding-left: 130px;
   }
   section{
     padding-top: 60px;
@@ -552,6 +555,9 @@ footer{
     width: 200px;
     margin-bottom: 20px;
   } 
+  .main-logo-wrapper a{
+    display:none;
+  }
   section#header{
       height: 225px;
   }
@@ -559,4 +565,71 @@ footer{
   .header-text-wrap {
     padding: 45px 0 13em;  
   }
+
 }
+@media (min-device-width : 375px) and (max-device-width : 667px){
+  video{
+    display: none;
+  }
+  .instagram-container img{
+    width: 80%;
+  }
+  nav ul{
+    display: none;
+  }
+  #map-ui{
+    display:block;
+  }
+  section#contact .address-info{
+    position: static;
+    padding-top: 0px;
+  }
+  .header-overlay h2{
+    display:none;
+  }
+  video{
+  }
+  .header-overlay h1{
+    display: none;
+  }
+  nav{
+    margin: 0px;
+    padding-left: 130px;
+  }
+  section{
+    padding-top: 60px;
+  }
+  #about h5{
+    margin-top: 25px;
+  }
+  .instagram-container a{
+    padding: 0px;
+    border: 0px;
+    text-align:center;
+    margin-top:20px;
+  }
+  .instagram-container strong{
+    display: inline-block;
+    width: 75%;
+    padding-left: 20px;
+  }
+  .service-wrap .service i{
+    display:none;
+  }
+  .main-logo-wrapper img {
+    width: 275px;
+    margin-bottom: 20px;
+  } 
+  .main-logo-wrapper a{
+    display:block;
+    margin: 0 auto;
+  }
+  section#header{
+      height: 400px;
+  }
+
+  .header-text-wrap {
+    padding: 45px 0 13em;  
+  }
+}
+
